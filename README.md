@@ -195,5 +195,16 @@ A lo largo de esta aventura, he potenciado mi arsenal de SQL con poder de fuego.
 
 🧠 Magia Analítica: Subí de nivel mis habilidades de resolución de problemas.
 
-# Conclusiones
-Este proyecto me ayudó a desarrollar mis habilidades en SQL y me dió valiosa información para el análisis de datos en el mercado laboral. Los resultados encontrados a partir del análisis me sirvieron como guía para priorizar el desarrollo de habilidades para que coincidan con la búsqueda de empleo. Aspirando a analista de datos es un competitivo y buen empleo enfocado en la alta demanda, y los salarios altos según habilidades. Estos hallazgos resaltan la importancia del aprendizaje contínuo y la adaptación a las actuales tecnologías y formas de lenguaje en el campo del análisis de datos.
+🧾 Conclusiones
+
+Este proyecto no solo mejoró mi dominio de SQL, sino que también me brindó una visión profunda del mercado laboral para analistas de datos.
+
+Principales aprendizajes:
+
+El mercado es altamente competitivo, pero lleno de oportunidades.
+
+Las habilidades clave combinan demanda + salario.
+
+La actualización constante es esencial en el campo del análisis de datos.
+
+✨ Este análisis me permitió priorizar mi aprendizaje y orientar mi desarrollo hacia habilidades verdaderamente valiosas para crecer como futura Data Analyst.
