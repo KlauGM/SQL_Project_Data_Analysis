@@ -185,7 +185,7 @@ Cloud (AWS, Azure, Snowflake) → salarios premium
 ➡️ Combinación recomendada:
 Python + SQL + Cloud + BI
 
-````sql
+```sql
 SELECT skills_dim.skill_id,
     skills_dim.skills,
     COUNT(skills_job_dim.job_id) AS DEMANDA,
@@ -207,9 +207,10 @@ LIMIT 25
 
 🛠️ Consultas avanzadas: Joins, subqueries, CTEs (WITH).
 📊 Agregaciones: COUNT(), AVG(), GROUP BY.
+
 🧠 Pensamiento analítico: Resolver problemas basados en datos reales del mercado laboral.
 
-## 📄 Conclusiones
+### 📄 Conclusiones
 
 Este proyecto no solo fortaleció mis habilidades en SQL, sino que también me brindó una visión profunda del mercado laboral de analistas de datos.
 
@@ -221,9 +222,11 @@ Las habilidades clave combinan demanda + salario.
 
 La actualización constante es esencial en análisis de datos.
 
-✨ Este análisis me permitió priorizar mi aprendizaje y orientar mi desarrollo hacia habilidades estratégicas del mercado.
+✨ Este análisis me permitió priorizar mi aprendizaje y orientar 
+mi desarrollo hacia habilidades estratégicas del mercado.
 
 # 💻 Contacto
 
 📧 claugmart@gmail.com
+
 🔗 www.linkedin.com/in/claudia-gm-700360269
