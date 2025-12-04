@@ -187,24 +187,34 @@ Recomendación final: Dominar Python + Cloud + herramientas de visualización te
 
 # 💡 Lo que Aprendí
 
-A lo largo de esta aventura, he potenciado mi arsenal de SQL con poder de fuego.
+A lo largo de esta aventura, he potenciado mi arsenal de SQL 
+con poder de fuego.
 
 🛠️ Dominio de Consultas Complejas: Dominar el arte del SQL principiante - avanzado, uniendo tablas y usando cláusulas WITH para maniobras de tablas temporales.
 
-📊 Agregación de Datos: Me familiaricé con GROUP BY y convertí funciones agregadas como COUNT() y AVG() en mis compañeros ideales para resumir datos.
+📊 Agregación de Datos: Me familiaricé con GROUP BY y convertí funciones agregadas como COUNT() y AVG() 
+en mis compañeros ideales para resumir datos.
 
-🧠 Magia Analítica: Subí de nivel mis habilidades de resolución de problemas.
+🧠 Magia Analítica: Subí de nivel mis habilidades 
+de resolución de problemas.
 
 🧾 Conclusiones
 
-Este proyecto no solo mejoró mi dominio de SQL, sino que también me brindó una visión profunda del mercado laboral para analistas de datos.
+Este proyecto no solo mejoró mi dominio de SQL, 
+sino que también me brindó una visión profunda 
+del mercado laboral para analistas de datos.
 
 Principales aprendizajes:
 
-El mercado es altamente competitivo, pero lleno de oportunidades.
+El mercado es altamente competitivo, pero lleno 
+de oportunidades.
 
 Las habilidades clave combinan demanda + salario.
 
-La actualización constante es esencial en el campo del análisis de datos.
+La actualización constante es esencial en el campo 
+del análisis de datos.
 
-✨ Este análisis me permitió priorizar mi aprendizaje y orientar mi desarrollo hacia habilidades verdaderamente valiosas para crecer como futura Data Analyst.
+✨ Este análisis me permitió priorizar mi aprendizaje 
+y orientar mi desarrollo hacia habilidades 
+verdaderamente valiosas 
+para crecer como futura Data Analyst.
