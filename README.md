@@ -185,12 +185,9 @@ Snowflake - Nicho lucrativo (37 demanda, $113K)
 
 Recomendación final: Dominar Python + Cloud + herramientas de visualización te posiciona en el cuadrante óptimo del mercado.
 
-<<<<<<< HEAD
 # Lo que Aprendí
 
-=======
 💡 Lo que Aprendí
->>>>>>> 1d7dbdfabd0cfb34b90ae1a5758d0d89674acc21
 A lo largo de esta aventura, he potenciado mi arsenal de SQL con poder de fuego.
 🛠️ Dominio de Consultas Complejas: Dominar el arte del SQL principiante - avanzado, uniendo tablas y usando cláusulas WITH para maniobras de tablas temporales.
 📊 Agregación de Datos: Me familiaricé con GROUP BY y convertí funciones agregadas como COUNT() y AVG() en mis compañeros ideales para resumir datos.
