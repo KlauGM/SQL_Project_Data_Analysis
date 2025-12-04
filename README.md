@@ -1,21 +1,40 @@
 # Introducción
-🤓¡Adentrándome en los datos el mercado laboral! Enfocándo en los roles como Data Analyst📊, el proyecto explora los empleos mejor pagados, las habilidades más demandadas que contrastan con análisis de salarios altos.💷
 
-💻Queries en SQL? Dale un vistazo aquí: [proyecto_sql folder](/proyecto_sql/)
+🤓 ¡Adentrándome en los datos del mercado laboral!
+Este proyecto analiza:
 
-## Contexto
+Los trabajos mejor pagados de Data Analyst
 
-Motivada por el deseo de navegar más eficazmente en el mercado laboral de analista de datos, este proyecto surgió con el objetivo de identificar las habilidades mejor remuneradas y más solicitadas, simplificando la búsqueda de empleo óptimo para otros profesionales.
+Las habilidades más demandadas
 
-Las preguntas que busqué responder mediante mis consultas SQL fueron:
+Las tecnologías asociadas con salarios más altos
 
-1. ¿Cuáles son los puestos de analista de datos con mejor remuneración?
-2. ¿Qué habilidades se requieren para estos puestos mejor remunerados?
-3. ¿Cuáles son las habilidades más demandadas para analistas de datos?
-4. ¿Qué habilidades se asocian con salarios más elevados?
-5. ¿Cuáles son las habilidades más estratégicas para aprender?
+El perfil óptimo que combina demanda + salario
 
-# Herramientas Utilizadas
+💻 Consultas SQL aquí:
+[proyecto_sql folder](/proyecto_sql/)
+
+## 🌍 Contexto
+
+Este proyecto nació del interés por comprender qué habilidades impulsan el crecimiento profesional en el análisis de datos.
+Para ello, se formularon preguntas clave:
+
+¿Cuáles son los roles mejor pagados?
+
+¿Qué habilidades requieren?
+
+¿Cuáles son las habilidades más demandadas?
+
+¿Qué skills están asociadas a mejores salarios?
+
+¿Qué habilidades son estratégicas para aprender?
+
+# ⚒️ Herramientas Utilizadas
+           
+| **SQL**                | Consultas y  análisis 
+| **PostgreSQL**         | Base de datos        
+| **Visual Studio Code** | Ejecución de queries 
+| **Git & GitHub**       | Control de versiones 
 
 Para mi análisis profundo del mercado laboral de analista de datos, utilicé varias herramientas fundamentales:
 
@@ -24,14 +43,9 @@ Para mi análisis profundo del mercado laboral de analista de datos, utilicé va
 - **Visual Studio Code**: Mi editor principal para la administración de bases de datos y ejecución de consultas SQL.
 - **Git & GitHub**: Esenciales para el control de versiones y compartir mis scripts SQL y análisis, facilitando la colaboración y el seguimiento del proyecto.
 
-# El Análisis
+# 🔎 El Análisis
 
-Cada consulta de este proyecto buscó investigar aspectos específicos del mercado laboral de analista de datos. Esta es la forma en que abordé cada pregunta:
-
-### 1. Puestos de Analista de Datos con Mayor Remuneración
-
-Para identificar los roles mejor pagados, filtré las posiciones de analista de datos según el salario promedio anual y la ubicación, con enfoque en empleos remotos. Esta consulta destaca las oportunidades de alta remuneración en el sector.
-
+1️⃣ Puestos de Analista de Datos Mejor Pagados
 ```sql
 SELECT job_id,
     job_title AS NOMBRE_EMPLEO,
@@ -46,9 +60,22 @@ WHERE job_title_short = 'Data Analyst'
     AND job_location = 'Anywhere'
     AND salary_year_avg IS NOT NULL
 ORDER BY salary_year_avg DESC
-LIMIT 10
+LIMIT 10;
 ```
-Este es el panorama de los principales trabajos de analista de datos en 2023:
+## 📊 Insights
+
+Salarios entre $184k y $650k USD.
+
+Empresas destacadas: SmartAsset, Meta, AT&T.
+
+Diversidad de roles, desde Data Analyst hasta Director of Analytics.
+
+![Salarios Anuales Promedio](proyecto_sql/assets/Cap1.png)
+
+
+### 1. Puestos de Analista de Datos con Mayor Remuneración
+
+Para identificar los roles mejor pagados, filtré las posiciones de analista de datos según el salario promedio anual y la ubicación, con enfoque en empleos remotos. Esta consulta destaca las oportunidades de alta remuneración en el sector.
 
 - **Rango Salarial Amplio:** Los 10 roles mejor remunerados de analista de datos oscilan entre $184,000 y $650,000, lo que indica un potencial salarial significativo en este campo.
 
@@ -56,16 +83,17 @@ Este es el panorama de los principales trabajos de analista de datos en 2023:
 
 - **Variedad en Títulos:** Existe una alta diversidad en los títulos de trabajo, desde Analista de Datos hasta Director de Analítica, reflejando roles variados y especializaciones dentro de la analítica de datos.
 
-![Salarios Anuales Promedio](proyecto_sql/assets/Cap1.png)
+### 2️⃣ Habilidades Mejor Pagadas
 
-### 2. Habilidades Mejor Pagadas
+| Skill         | Salario  |
+| ------------- | -------- |
+| **SVN**       | $400,000 |
+| **Solidity**  | $179,000 |
+| **Couchbase** | $160,515 |
+
+Promedio del Top 10: $168,000 USD
 
 ![Habilidades con Mayor Salario](proyecto_sql/assets/Cap2.png)
-*Datos destacados:
-🥇 SVN: $400,000 (¡Increíble!)
-🥈 Solidity: $179,000
-🥉 Couchbase: $160,515
-Promedio Top 10: ~$168K*
 
 ```sql
 WITH top_trabajos_pagados AS (
@@ -89,24 +117,19 @@ FROM top_trabajos_pagados
     INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY SALARIO DESC
 ```
+### 3️⃣ Habilidades Más Solicitadas
 
-### 3. Habilidades Más Solicitadas
+| Habilidad    | Menciones |
+| ------------ | --------- |
+| **SQL**      | 7,291     |
+| **Excel**    | 4,611     |
+| **Python**   | 4,330     |
+| **Tableau**  | 3,745     |
+| **Power BI** | 2,609     |
+
+🔎 SQL es la habilidad más dominante del mercado.
+
 ![Habilidades mas Solicitadas](proyecto_sql/assets/Cap3.png)
-*Los datos muestran:
-🥇 SQL: 7,291 menciones
-🥈 Excel: 4,611 menciones
-🥉 Python: 4,330 menciones
-Tableau: 3,745 menciones
-Power BI: 2,609 menciones*
-
-| **Habilidad** | **Demanda** |
-| --------- | ----------- |
-| SQL       | 7291        |
-| Excel     | 4611        |
-| Python    | 4330        |
-| Tableau   | 3745        |
-| Power BI  | 2609        |
-
 
 ```sql
 SELECT skills,
@@ -120,18 +143,15 @@ GROUP BY skills
 ORDER BY DEMANDA DESC
 LIMIT 5;
 ```
-### 4. Habilidades Mejor Pagadas
 
-| **Skill** | **Salario Promedio (USD)** |
-| --------- | -------------------------- |
-| svn       | 400,000                    |
-| solidity  | 179,000                    |
-| couchbase | 160,515                    |
-| datarobot | 155,486                    |
-| golang    | 155,000                    |
-| mxnet     | 149,000                    |
-| dplyr     | 147,633                    |
-| vmware    | 147,500                    |
+### 4️⃣ Habilidades Mejor Pagadas en Promedio
+| Skill     | Salario |
+| --------- | ------- |
+| SVN       | $400k   |
+| Solidity  | $179k   |
+| Couchbase | $160k   |
+| DataRobot | $155k   |
+| GoLang    | $155k   |
 
 ```sql
 SELECT skills,
@@ -146,13 +166,24 @@ ORDER BY SALARIO_PROMEDIO DESC
 LIMIT 25;
 ```
 
-### 5. Habilidades Óptimas
+### 5️⃣ Habilidades Óptimas (Demanda + Salario)
 
-Insights estratégicos:
+| Skill         | Demanda | Salario  | Insight                  |
+| ------------- | ------- | -------- | ------------------------ |
+| **Snowflake** | 37      | $112,948 | Muy bien pagada          |
+| **Azure**     | 34      | $111,225 | Alta demanda             |
+| **AWS**       | 32      | $108,317 | Estándar de la industria |
 
-Python y R combinan demanda masiva con buenos salarios
-Cloud (AWS, Azure, Snowflake) ofrece salarios premium
-El equilibrio perfecto está en tecnologías con alta demanda Y buen salario
+### 🎯 Skills estratégicos
+
+Python → 236 menciones / $101k
+
+R → 148 menciones / $100k
+
+Cloud (AWS, Azure, Snowflake) → salarios premium
+
+➡️ Combinación recomendada:
+Python + SQL + Cloud + BI
 
 ````sql
 SELECT skills_dim.skill_id,
@@ -171,38 +202,16 @@ ORDER BY avg_salary DESC,
     DEMANDA DESC
 LIMIT 25
 ```
-| Skill         | Demanda  Salario |
-| **Snowflake** | 37      | 112,948 | Muy bien pagado y en crecimiento. |
-| **Azure**     | 34      | 111,225 | Alta demanda en entornos cloud.   |
-| **AWS**       | 32      | 108,317 | Estándar del sector cloud.     
-   |
-🎯 Conclusiones Principales:
-Habilidades más óptimas:
 
-Python - Líder absoluto (236 demanda, $101K)
-R - Segunda mejor opción (148 demanda, $100K)
-Snowflake - Nicho lucrativo (37 demanda, $113K)
+## 💡Lo que Aprendí
 
-Recomendación final: Dominar Python + Cloud + herramientas de visualización te posiciona en el cuadrante óptimo del mercado.
+🛠️ Consultas avanzadas: Joins, subqueries, CTEs (WITH).
+📊 Agregaciones: COUNT(), AVG(), GROUP BY.
+🧠 Pensamiento analítico: Resolver problemas basados en datos reales del mercado laboral.
 
-# 💡 Lo que Aprendí
+## 📄 Conclusiones
 
-A lo largo de esta aventura, he potenciado mi arsenal de SQL 
-con poder de fuego.
-
-🛠️ Dominio de Consultas Complejas: Dominar el arte del SQL principiante - avanzado, uniendo tablas y usando cláusulas WITH para maniobras de tablas temporales.
-
-📊 Agregación de Datos: Me familiaricé con GROUP BY y 
-convertí funciones agregadas como COUNT() y AVG() 
-en mis compañeros ideales para resumir datos.
-
-🧠 Magia Analítica: Subí de nivel mis habilidades 
-de resolución de problemas.
-
-# Conclusiones
-
-Este proyecto no solo mejoró mi dominio de SQL, sino que también me brindó una visión profunda del mercado laboral para 
-analistas de datos.
+Este proyecto no solo fortaleció mis habilidades en SQL, sino que también me brindó una visión profunda del mercado laboral de analistas de datos.
 
 Principales aprendizajes:
 
@@ -210,7 +219,11 @@ El mercado es altamente competitivo, pero lleno de oportunidades.
 
 Las habilidades clave combinan demanda + salario.
 
-La actualización constante es esencial en el campo del análisis de datos.
+La actualización constante es esencial en análisis de datos.
 
-✨ Este análisis me permitió priorizar mi aprendizaje y orientar mi desarrollo hacia habilidades verdaderamente valiosas 
-para crecer como futura Data Analyst.
+✨ Este análisis me permitió priorizar mi aprendizaje y orientar mi desarrollo hacia habilidades estratégicas del mercado.
+
+# 💻 Contacto
+
+📧 claugmart@gmail.com
+🔗 www.linkedin.com/in/claudia-gm-700360269
