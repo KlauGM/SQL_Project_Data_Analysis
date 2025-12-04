@@ -185,7 +185,6 @@ Snowflake - Nicho lucrativo (37 demanda, $113K)
 
 Recomendación final: Dominar Python + Cloud + herramientas de visualización te posiciona en el cuadrante óptimo del mercado.
 
-# Lo que Aprendí
 
 💡 Lo que Aprendí
 A lo largo de esta aventura, he potenciado mi arsenal de SQL con poder de fuego.
